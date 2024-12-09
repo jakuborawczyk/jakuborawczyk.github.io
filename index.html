@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarsaSKÄMTarn</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">FarsaSKÄMTarn</h1>
+
+    <button id="get-joke" class="joke-button">Få ett skämt!</button>
+
+    <p id="joke-output" class="joke-output"></p>
+
+    <!-- Meme-bild -->
+    <img id="funny-image" class="funny-image" src="" alt="Funny Meme" />
+
+    <!-- Volymkontroll för musik -->
+    <input id="volume-control" type="range" min="0" max="1" step="0.1" value="1" />
+
+    <!-- Never Gonna Give You Up Audio (Rickroll) -->
+    <audio id="rickroll-audio" loop>
+      <source src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" type="audio/mpeg">
+      Din webbläsare stödjer inte ljud.
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

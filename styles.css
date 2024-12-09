@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .joke-button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .joke-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .joke-button:active {
+    transform: scale(0.9);
+  }
+  
+  .joke-output {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #555;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .funny-image {
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #volume-control {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Knappens animation för att skaka när skämtet har hämtats */
+  .joke-button.shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+  
