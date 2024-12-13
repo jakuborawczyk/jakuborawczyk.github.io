@@ -2,6 +2,7 @@
 :root {
   --primary-color: #ff4081;
   --secondary-color: #ffffffcc;
+  --title-color:#333;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   
   .title {
     font-size: 2rem;
-    color: #333;
+    color: var(--title-color);
     margin-bottom: 20px;
     transition: transform 0.5s ease-in-out;
   }
